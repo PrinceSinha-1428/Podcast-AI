@@ -3,6 +3,7 @@ import { session, withAuth } from "./auth";
 import { User } from "./schema/user.schema";
 import { Artist } from "./schema/artist.schema";
 import { Podcast } from "./schema/podcast.schema";
+import { extendedGraphqlSchema } from "./schema/extend";
 
 export default withAuth (
     config({
@@ -16,6 +17,9 @@ export default withAuth (
             isAccessAllowed: ({ session }) => {
                 return !!session?.data?.isAdmin;
             }
+        },
+        graphql: {
+            extendGraphqlSchema: extendedGraphqlSchema,
         }
     })
 )
