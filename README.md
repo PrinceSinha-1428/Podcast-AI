@@ -32,7 +32,7 @@
 ## 🏗️ Architecture Diagram
 
 <p align="center">
-  <img src="docs/architect.png" alt="Architecture Diagram" />
+  <img src="./podcast_server/docs/architect.png" alt="Architecture Diagram" />
 </p>
 
 **Workflow:**

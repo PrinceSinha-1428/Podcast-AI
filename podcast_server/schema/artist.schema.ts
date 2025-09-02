@@ -1,7 +1,7 @@
 import { list } from "@keystone-6/core";
 import { checkbox, password, text, timestamp } from "@keystone-6/core/fields";
 
-export const User = list({
+export const Artist = list({
     access: {
         operation: {
             query: () => true,
